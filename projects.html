@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS60075: Final Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#8C1515', 
+                            dark: '#540b0b',
+                            link: '#005587',
+                            bgalt: '#F9F9F8' 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { color: #333; line-height: 1.6; font-family: 'Open Sans', sans-serif; }
+        h2, h3 { color: #8C1515; font-weight: 700; }
+        a { color: #005587; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-white antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-brand-red text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-xl tracking-tight">CS60075 Home</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
+                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2">Schedule</a>
+                        <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2">Office Hours</a>
+                        <a href="projects.html" class="hover:text-gray-200 px-3 py-2 border-b-2 border-white">Final projects</a>
+                        <a href="#lab" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-12 w-full">
+        <h2 class="text-3xl mb-6 border-b pb-2">Final Projects</h2>
+        
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-8 text-center mt-12">
+            <h3 class="text-2xl text-gray-700 font-semibold mb-2">To be announced in due time</h3>
+            <p class="text-gray-500">Details regarding the final project requirements, topics, and deadlines will be posted here later in the semester.</p>
+        </div>
+    </main>
+
+    <!-- Footer Space -->
+    <footer class="bg-gray-800 text-white py-8 text-center text-sm w-full mt-auto">
+        <p>&copy; 2026 IIT Kharagpur. Adapted from Stanford CS224N template.</p>
+    </footer>
+
+</body>
+</html>

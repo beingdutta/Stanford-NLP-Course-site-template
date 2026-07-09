@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS60075: Natural Language Processing with Deep Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#8C1515', // Stanford/Reference Red
+                            dark: '#540b0b',
+                            link: '#005587',
+                            bgalt: '#F9F9F8' // Off-white for alternating sections
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        h2, h3 {
+            color: #8C1515;
+            font-weight: 700;
+        }
+        a {
+            color: #005587;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .content-container {
+            max-width: 6xl;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-brand-red text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-xl tracking-tight">CS60075 Home</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
+                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2">Schedule</a>
+                        <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2">Office Hours</a>
+                        <a href="projects.html" class="hover:text-gray-200 px-3 py-2">Final projects</a>
+                        <!-- <a href="#lecture-videos" class="hover:text-gray-200 px-3 py-2">Lecture Videos</a> -->
+                        <a href="#lab" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="max-w-6xl mx-auto py-10 flex flex-col md:flex-row items-center md:items-start">
+        <!-- Left Section: Logo (20% width) -->
+        <div class="flex-shrink-0 mb-6 md:mb-0 md:w-1/5 flex justify-center md:justify-start px-4">
+            <img src="assets/iit-kharagpur-seeklogo.png" alt="Institute Logo" class="h-auto max-h-28 w-full max-w-[120px]">
+        </div>
+        
+        <!-- Right Section: Header and Description (80% width) -->
+        <div class="md:w-4/5">
+            <!-- Title -->
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl text-gray-800 font-light mb-2">CS60075: Natural Language Processing</h1>
+                <p class="text-xl font-semibold text-gray-700">IIT Kharagpur / Autumn 2026</p>
+            </div>
+
+            <!-- Intro Text -->
+            <div class="pt-6 pb-12 text-gray-700 text-lg px-4">
+                <p>
+                    Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural networks for NLP.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Text -->
+    <!-- The original intro text section was moved into the header -->
+
+    <!-- Staff Section -->
+    <section class="bg-brand-bgalt py-12 border-t border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4">
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Instructors -->
+                <div class="lg:w-1/4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 text-center">Instructor</h3>
+                    <div class="flex flex-col gap-8">
+                        <!-- Instructor 1 -->
+                        <div class="text-center">
+                            <img src="assets/user.jpg" alt="Somak Aditya" class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-sm">
+                            <a href="#" class="text-brand-link block font-medium">Somak Aditya</a>
+                            <span class="text-sm text-gray-500 block">(Course Instructor)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaching Assistants -->
+                <div class="lg:w-3/4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Teaching Assistants</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 justify-items-center">
+                        <!-- TA 1 -->
+                        <div class="text-center">
+                            <img src="assets/user.jpg" alt="Aritra Dutta" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <a href="#" class="text-brand-link block text-sm font-medium">Aritra Dutta</a>
+                        </div>
+                        <!-- TA 2 -->
+                        <div class="text-center">
+                            <img src="assets/user.jpg" alt="Arghyadeep Ghosh" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <a href="#" class="text-brand-link block text-sm font-medium">Arghyadeep Ghosh</a>
+                        </div>
+                        <!-- TA 3 -->
+                        <div class="text-center">
+                            <img src="assets/user.jpg" alt="Sachin Vasistha" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <a href="#" class="text-brand-link block text-sm font-medium">Sachin Vasistha</a>
+                        </div>
+                        <!-- TA 4 -->
+                        <div class="text-center">
+                            <img src="assets/user.jpg" alt="Preeta Das" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <a href="#" class="text-brand-link block text-sm font-medium">Preeta Das</a>
+                            <span class="text-xs text-gray-500 block">(Additional TA)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics -->
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl mb-4">Logistics</h2>
+        <ul class="list-disc pl-8 space-y-2 text-gray-800">
+            <li><strong>Lectures:</strong> are on Tuesday/Thursday 4:30 PM - 5:50 PM in <a href="#">Nalanda Classroom Complex</a>. The lectures will also be livestreamed on <a href="#">ERP/Moodle</a>.</li>
+            <li><strong>Lecture videos for enrolled students:</strong> are posted on <a href="#">Moodle</a> (requires login) shortly after each lecture ends. Unfortunately, it is not possible to make these videos viewable by non-enrolled students.</li>
+            <li><strong>Publicly available lecture videos and versions of the course:</strong> Complete videos for past iterations are available (free!) on <a href="#">YouTube playlist</a>. Anyone is welcome to use these resources.</li>
+            <li><strong>Office hours:</strong> Hybrid format with remote (over MS Teams) or in-person options. Information <a href="#">here</a>.</li>
+            <li><strong>Contact:</strong> Students should ask <i>all</i> course-related questions in the <a href="#">Moodle forum</a>. For external enquiries, emergencies, or personal matters that you don't wish to put in a private post, you can email us at <i>cs60075-staff@iitkgp.ac.in</i>. Please send all emails to this mailing list - do not email the instructors directly.</li>
+        </ul>
+    </section>
+
+    <!-- Content & Previous Offerings (Alt BG) -->
+    <section class="bg-brand-bgalt py-12 border-t border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl mb-6">Content</h2>
+            
+            <h3 class="text-xl mb-3 text-gray-900 font-bold">What is this course about?</h3>
+            <p class="mb-8 text-gray-800">
+                Natural language processing (NLP) or computational linguistics is one of the most important technologies of the information age. Applications of NLP are everywhere because people communicate almost everything in language: web search, advertising, emails, customer service, language translation, virtual agents, medical reports, etc. In recent years, Deep Learning approaches have obtained very high performance across many different NLP tasks, using single end-to-end neural models that do not require traditional, task-specific feature engineering. In this course, students will gain a thorough introduction to cutting-edge research in Deep Learning for NLP. Through lectures, assignments and a final project, students will learn the necessary skills to design, implement, and understand their own neural network models, using the PyTorch framework.
+            </p>
+
+            <blockquote class="border-l-4 border-gray-300 pl-4 py-2 italic text-gray-600 mb-8 bg-white">
+                "Take it. CS60050 taught me algorithms. CS60051 taught me math. CS60075 taught me how to write machine learning models." – A previous student
+            </blockquote>
+
+            <h3 class="text-xl mb-3 text-gray-900 font-bold">Previous offerings</h3>
+            <p class="mb-4 text-gray-800">
+                Below you can find archived websites and student project reports from previous years. <strong class="text-red-600">Disclaimer: assignments change from year to year; please do not do assignments from previous years!</strong>
+            </p>
+
+            <div class="bg-white border border-gray-200 rounded-sm overflow-hidden mb-8 text-sm">
+                <div class="grid grid-cols-1 md:grid-cols-12 border-b border-gray-200">
+                    <div class="p-3 md:col-span-3 font-bold bg-gray-50">CS60075 Websites:</div>
+                    <div class="p-3 md:col-span-9">
+                        <a href="#">Autumn 2025</a> / <a href="#">Autumn 2024</a> / <a href="#">Autumn 2023</a> / <a href="#">Autumn 2022</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 border-b border-gray-200">
+                    <div class="p-3 md:col-span-3 font-bold bg-gray-50">CS60075 Lecture Videos:</div>
+                    <div class="p-3 md:col-span-9">
+                        <a href="#">Autumn 2024</a> / <a href="#">Autumn 2023</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12">
+                    <div class="p-3 md:col-span-3 font-bold bg-gray-50">CS60075 Reports:</div>
+                    <div class="p-3 md:col-span-9">
+                        <a href="#">Autumn 2024</a> / <a href="#">Autumn 2023</a> / <a href="#">Autumn 2022</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-xl mb-3 text-gray-900 font-bold">Prerequisites</h3>
+            <ul class="list-disc pl-8 space-y-4 text-gray-800">
+                <li>
+                    <strong>Proficiency in Python</strong><br>
+                    All class assignments will be in Python (using <a href="#">NumPy</a> and <a href="#">PyTorch</a>). If you need to remind yourself of Python, or you're not very familiar with NumPy, you can come to the Python review session in week 1 (listed in the <a href="#">schedule</a>). If you have a lot of programming experience but in a different language, you will probably be fine.
+                </li>
+                <li>
+                    <strong>College Calculus, Linear Algebra</strong> (e.g. MA10001, MA10002)<br>
+                    You should be comfortable taking (multivariable) derivatives and understanding matrix/vector notation and operations.
+                </li>
+                 <li>
+                    <strong>Basic Probability and Statistics</strong><br>
+                    You should know basics of probabilities, gaussian distributions, mean, standard deviation, etc.
+                </li>
+                 <li>
+                    <strong>Foundations of Machine Learning</strong><br>
+                    We will be formulating cost functions, taking derivatives and performing optimization with gradient descent. Knowing basic ML concepts will be very helpful.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reference Texts -->
+    <section class="max-w-5xl mx-auto px-4 py-12">
+        <h3 class="text-xl mb-3 text-gray-900 font-bold">Reference Texts</h3>
+        <p class="mb-4 text-gray-800">The following texts are useful, but none are required. All of them can be read free online.</p>
+        <ul class="list-disc pl-8 space-y-1 mb-6 text-gray-800">
+            <li>Dan Jurafsky and James H. Martin. <a href="#">Speech and Language Processing (3rd ed. draft)</a></li>
+            <li>Jacob Eisenstein. <a href="#">Natural Language Processing</a></li>
+            <li>Yoav Goldberg. <a href="#">A Primer on Neural Network Models for Natural Language Processing</a></li>
+            <li>Ian Goodfellow, Yoshua Bengio, and Aaron Courville. <a href="#">Deep Learning</a></li>
+            <li>Delip Rao and Brian McMahan. <a href="#">Natural Language Processing with PyTorch</a>.</li>
+            <li>Lewis Tunstall, Leandro von Werra, and Thomas Wolf. <a href="#">Natural Language Processing with Transformers</a></li>
+        </ul>
+        <p class="mb-4 text-gray-800">If you have no background in neural networks but would like to take the course anyway, you might well find one of these books helpful to give you more background:</p>
+         <ul class="list-disc pl-8 space-y-1 text-gray-800">
+            <li>Michael A. Nielsen. <a href="#">Neural Networks and Deep Learning</a></li>
+            <li>Eugene Charniak. <a href="#">Introduction to Deep Learning</a></li>
+        </ul>
+    </section>
+
+    <!-- Coursework -->
+    <section class="bg-brand-bgalt py-12 border-t border-gray-200" id="coursework">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl mb-4">Coursework</h2>
+            <p class="text-red-600 font-bold mb-6">Disclaimer: Coursework is tentative and subject to change!</p>
+
+            <h3 class="text-xl mb-3 text-gray-900 font-bold">Assignments (48%)</h3>
+            <p class="mb-8 text-gray-800">
+                There are four weekly assignments, which will improve both your theoretical understanding and your practical skills. All assignments contain both written questions and programming parts. In office hours, TAs may look at students' code for assignments 1 and 2, but not for assignments 3 and 4.
+            </p>
+
+            <h3 class="text-xl mb-3 text-gray-900 font-bold">Final Project (49%)</h3>
+            <p class="mb-4 text-gray-800">
+                The Final Project offers you the chance to apply your newly acquired skills towards an in-depth application. Students have two options: the <strong>Default Final Project</strong> (in which students tackle a predefined task, namely implementing a minimalist version of a Large Language Model) or a <strong>Custom Final Project</strong> (in which students choose their own project involving human language and deep learning). Examples of both can be seen on the <a href="#">previous year's website</a>. <i>Note: TAs may not look at students' code for either the default or custom final projects.</i>
+            </p>
+            
+            <p class="mb-2 text-gray-800">Important information</p>
+            <ul class="list-disc pl-8 space-y-2 mb-6 text-gray-800">
+                <li><strong>Credit:</strong> For both default and custom projects, credit for the final project is broken down as follows:
+                    <ul class="list-circle pl-6 mt-1 space-y-1">
+                        <li>Project proposal (8%)</li>
+                        <li>Project milestone (6%)</li>
+                        <li>Project poster (3%)</li>
+                        <li>Project report (32%)</li>
+                    </ul>
+                </li>
+                <li><strong>Deadlines:</strong> The project proposal, milestone and report are all due at 11:59pm IST. All deadlines are listed in the <a href="#">schedule</a>.</li>
+                <li><strong>Default Final Project:</strong> In this project, students implement parts of a transformer architecture and use it to tackle downstream tasks. Similar to previous years, the code is in PyTorch.</li>
+                <li><strong>Project advice</strong> [<a href="#">lecture slides</a>] [<a href="#">custom project tips</a>]: The <i>Practical Tips for Final Projects</i> lecture provides guidance for choosing and planning your project. To get project advice from staff members, first look at each staff member's areas of expertise on the <a href="#">office hours page</a>.</li>
+                <li><strong>Ethics-related questions:</strong> For guidance on projects dealing with ethical questions, or ethical questions that arise during your project, please contact the TAs.</li>
+            </ul>
+
+            <p class="mb-2 text-gray-800">Practicalities</p>
+            <ul class="list-disc pl-8 space-y-2 text-gray-800 mb-8">
+                <li><strong>Team size:</strong> Students may do final projects solo, or in teams of up to 3 people. We strongly recommend you do the final project in a team. Larger teams are expected to do correspondingly larger projects, and you should only form a 3-person team if you are planning to do an ambitious project where every team member will have a significant contribution.</li>
+                <li><strong>Contribution:</strong> In the final report we ask for a statement of what each team member contributed to the project. Team members will typically get the same grade, but we may differentiate in extreme cases.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer Space -->
+    <footer class="bg-gray-800 text-white py-8 text-center text-sm">
+        <p>&copy; 2026 IIT Kharagpur. Adapted from Stanford CS224N template.</p>
+    </footer>
+
+</body>
+</html>

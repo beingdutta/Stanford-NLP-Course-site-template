@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS60075: Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#8C1515', 
+                            dark: '#540b0b',
+                            link: '#005587',
+                            bgalt: '#F9F9F8' 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { color: #333; line-height: 1.6; font-family: 'Open Sans', sans-serif; }
+        h2, h3 { color: #8C1515; font-weight: 700; }
+        a { color: #005587; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-white antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-brand-red text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-xl tracking-tight">CS60075 Home</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
+                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2 border-b-2 border-white">Schedule</a>
+                        <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2">Office Hours</a>
+                        <a href="projects.html" class="hover:text-gray-200 px-3 py-2">Final projects</a>
+                        <!-- <a href="#lecture-videos" class="hover:text-gray-200 px-3 py-2">Lecture Videos</a> -->
+                        <a href="#lab" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-12 w-full">
+        <h2 class="text-3xl mb-6 border-b pb-2">Course Schedule</h2>
+        
+        <p class="mb-6 text-gray-800">
+            Below is the tentative schedule for the semester. Lecture slides and required readings will be linked here as the course progresses. 
+        </p>
+
+        <div class="bg-red-50 border-l-4 border-brand-red p-4 mb-8">
+            <p class="text-sm text-brand-dark">
+                <strong>Disclaimer:</strong> This schedule is tentative and subject to change. Please check back regularly for updates to reading materials and assignment deadlines.
+            </p>
+        </div>
+        
+        <!-- Table for Schedule -->
+        <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
+            <table class="min-w-full bg-white text-sm">
+                <thead class="bg-gray-100 border-b border-gray-300">
+                    <tr>
+                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-16">Week</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-32">Date</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-800">Topic</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-64">Materials & Deadlines</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <!-- Week 1 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">1</td>
+                        <td class="py-4 px-4 align-top">Tue, Aug 3</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Introduction to NLP and Deep Learning</span>
+                            <span class="text-gray-600 text-xs">Overview of the course, history of NLP, word representations.</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                            <span class="text-xs text-red-600 font-semibold block">Assignment 1 Out</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">Thu, Aug 5</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Word Vectors and Word2Vec</span>
+                            <span class="text-gray-600 text-xs">Word2Vec objective function, gradients, optimization.</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Reading 1]</a>
+                        </td>
+                    </tr>
+
+                    <!-- Week 2 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">2</td>
+                        <td class="py-4 px-4 align-top">Tue, Aug 10</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Neural Networks Fundamentals</span>
+                            <span class="text-gray-600 text-xs">Activation functions, architectures, forward computation.</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">Thu, Aug 12</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Backpropagation and Optimization</span>
+                            <span class="text-gray-600 text-xs">Computation graphs, chain rule, SGD, Adam.</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                            <span class="text-xs text-red-600 font-semibold block mt-1">Assignment 1 Due (11:59 PM)</span>
+                        </td>
+                    </tr>
+
+                    <!-- Week 3 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">3</td>
+                        <td class="py-4 px-4 align-top">Tue, Aug 17</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Language Models and RNNs</span>
+                            <span class="text-gray-600 text-xs">N-grams, Recurrent Neural Networks, vanishing gradients.</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="text-xs text-red-600 font-semibold block mb-1">Assignment 2 Out</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">Thu, Aug 19</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Transformers and Self-Attention</span>
+                            <span class="text-gray-600 text-xs">Key-Value-Query attention, Multi-head attention.</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer Space -->
+    <footer class="bg-gray-800 text-white py-8 text-center text-sm w-full mt-auto">
+        <p>&copy; 2026 IIT Kharagpur. Adapted from Stanford CS224N template.</p>
+    </footer>
+
+</body>
+</html>

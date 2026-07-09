@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS60075: Office Hours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#8C1515', 
+                            dark: '#540b0b',
+                            link: '#005587',
+                            bgalt: '#F9F9F8' 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { color: #333; line-height: 1.6; font-family: 'Open Sans', sans-serif; }
+        h2, h3 { color: #8C1515; font-weight: 700; }
+        a { color: #005587; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-white antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="bg-brand-red text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-xl tracking-tight">CS60075 Home</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
+                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2">Schedule</a>
+                        <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2 border-b-2 border-white">Office Hours</a>
+                        <a href="projects.html" class="hover:text-gray-200 px-3 py-2">Final projects</a>
+                        <!-- <a href="#lecture-videos" class="hover:text-gray-200 px-3 py-2">Lecture Videos</a> -->
+                        <a href="#lab" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="flex-grow max-w-5xl mx-auto px-4 py-12 w-full">
+        <h2 class="text-3xl mb-6 border-b pb-2">Office Hours</h2>
+        
+        <p class="mb-6 text-gray-800">
+            Office hours are a great place to get help with assignments, discuss course concepts, or talk about your final project. Please check this schedule regularly as times and locations may shift slightly throughout the semester.
+        </p>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
+            <p class="text-sm text-yellow-700">
+                <strong>Note:</strong> All remote office hours are held via MS Teams. Links will be posted on the Moodle forum 10 minutes before the start time.
+            </p>
+        </div>
+
+        <h3 class="text-xl mb-4">Weekly Schedule</h3>
+        
+        <!-- Table for Office Hours -->
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200 mb-8">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Day</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Time (IST)</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Staff</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Location</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="py-3 px-4">Monday</td>
+                        <td class="py-3 px-4">10:00 AM - 11:30 AM</td>
+                        <td class="py-3 px-4">Alice Johnson (Head TA)</td>
+                        <td class="py-3 px-4">CSE Dept, Room 102</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="py-3 px-4">Tuesday</td>
+                        <td class="py-3 px-4">2:00 PM - 4:00 PM</td>
+                        <td class="py-3 px-4">Prof. Jane Doe</td>
+                        <td class="py-3 px-4">Faculty Office (By Appointment)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Wednesday</td>
+                        <td class="py-3 px-4">6:00 PM - 8:00 PM</td>
+                        <td class="py-3 px-4">Bob Williams & Charlie Brown</td>
+                        <td class="py-3 px-4">Remote (MS Teams)</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="py-3 px-4">Thursday</td>
+                        <td class="py-3 px-4">3:00 PM - 4:30 PM</td>
+                        <td class="py-3 px-4">Prof. John Smith</td>
+                        <td class="py-3 px-4">Nalanda Complex N-101</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4">Friday</td>
+                        <td class="py-3 px-4">4:00 PM - 6:00 PM</td>
+                        <td class="py-3 px-4">Diana Prince & Evan Wright</td>
+                        <td class="py-3 px-4">CSE Dept Lab 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer Space -->
+    <footer class="bg-gray-800 text-white py-8 text-center text-sm w-full">
+        <p>&copy; 2026 IIT Kharagpur. Adapted from Stanford CS224N template.</p>
+    </footer>
+
+</body>
+</html>
