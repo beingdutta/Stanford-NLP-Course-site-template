@@ -21,17 +21,16 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="css/navbar.css">
     <style>
         body { color: #333; line-height: 1.6; font-family: 'Open Sans', sans-serif; }
         h2, h3 { color: #8C1515; font-weight: 700; }
-        a { color: #005587; text-decoration: none; }
-        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body class="bg-white antialiased flex flex-col min-h-screen">
 
     <!-- Navigation Bar -->
-    <nav class="bg-brand-red text-white sticky top-0 z-50">
+    <nav class="bg-brand-red text-white sticky top-0 z-50 main-nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-14">
                 <div class="flex items-center">
@@ -39,10 +38,9 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
-                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2 border-b-2 border-white">Schedule</a>
+                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2">Schedule</a>
                         <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2">Office Hours</a>
                         <a href="projects.html" class="hover:text-gray-200 px-3 py-2">Final projects</a>
-                        <!-- <a href="#lecture-videos" class="hover:text-gray-200 px-3 py-2">Lecture Videos</a> -->
                         <a href="#lab" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
                     </div>
                 </div>
@@ -70,82 +68,315 @@
                 <thead class="bg-gray-100 border-b border-gray-300">
                     <tr>
                         <th class="py-3 px-4 text-left font-bold text-gray-800 w-16">Week</th>
-                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-32">Date</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-48">Date</th>
                         <th class="py-3 px-4 text-left font-bold text-gray-800">Topic</th>
-                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-64">Materials & Deadlines</th>
+                        <th class="py-3 px-4 text-left font-bold text-gray-800 w-48">Materials</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-gray-200">
-                    <!-- Week 1 -->
+                    
+                    <!-- Week 0 -->
                     <tr>
-                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">1</td>
-                        <td class="py-4 px-4 align-top">Tue, Aug 3</td>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="1">0</td>
+                        <td class="py-4 px-4 align-top">2026-07-17</td>
                         <td class="py-4 px-4 align-top">
-                            <span class="font-medium text-gray-900 block mb-1">Introduction to NLP and Deep Learning</span>
-                            <span class="text-gray-600 text-xs">Overview of the course, history of NLP, word representations.</span>
+                            <span class="font-medium text-gray-900 block mb-1">Introduction</span>
                         </td>
                         <td class="py-4 px-4 align-top">
                             <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
-                            <span class="text-xs text-red-600 font-semibold block">Assignment 1 Out</span>
+                        </td>
+                    </tr>
+
+                    <!-- Week 1 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">1</td>
+                        <td class="py-4 px-4 align-top">2026-07-22</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">NLP Basics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
                         </td>
                     </tr>
                     <tr>
-                        <td class="py-4 px-4 align-top">Thu, Aug 5</td>
+                        <td class="py-4 px-4 align-top">2026-07-23</td>
                         <td class="py-4 px-4 align-top">
-                            <span class="font-medium text-gray-900 block mb-1">Word Vectors and Word2Vec</span>
-                            <span class="text-gray-600 text-xs">Word2Vec objective function, gradients, optimization.</span>
+                            <span class="font-medium text-gray-900 block mb-1">NLP Basics</span>
                         </td>
                         <td class="py-4 px-4 align-top">
                             <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
-                            <a href="#" class="block mb-1 text-sm text-brand-link">[Reading 1]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-07-24</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Text Processing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
                         </td>
                     </tr>
 
                     <!-- Week 2 -->
                     <tr>
-                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">2</td>
-                        <td class="py-4 px-4 align-top">Tue, Aug 10</td>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">2</td>
+                        <td class="py-4 px-4 align-top">2026-07-29</td>
                         <td class="py-4 px-4 align-top">
-                            <span class="font-medium text-gray-900 block mb-1">Neural Networks Fundamentals</span>
-                            <span class="text-gray-600 text-xs">Activation functions, architectures, forward computation.</span>
+                            <span class="font-medium text-gray-900 block mb-1">Text Processing</span>
                         </td>
                         <td class="py-4 px-4 align-top">
                             <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
                         </td>
                     </tr>
                     <tr>
-                        <td class="py-4 px-4 align-top">Thu, Aug 12</td>
+                        <td class="py-4 px-4 align-top">2026-07-30</td>
                         <td class="py-4 px-4 align-top">
-                            <span class="font-medium text-gray-900 block mb-1">Backpropagation and Optimization</span>
-                            <span class="text-gray-600 text-xs">Computation graphs, chain rule, SGD, Adam.</span>
+                            <span class="font-medium text-gray-900 block mb-1">Text Processing</span>
                         </td>
                         <td class="py-4 px-4 align-top">
                             <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
-                            <span class="text-xs text-red-600 font-semibold block mt-1">Assignment 1 Due (11:59 PM)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-07-31</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">LM and Smoothing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
                         </td>
                     </tr>
 
                     <!-- Week 3 -->
                     <tr>
-                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">3</td>
-                        <td class="py-4 px-4 align-top">Tue, Aug 17</td>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">3</td>
+                        <td class="py-4 px-4 align-top">2026-08-05</td>
                         <td class="py-4 px-4 align-top">
-                            <span class="font-medium text-gray-900 block mb-1">Language Models and RNNs</span>
-                            <span class="text-gray-600 text-xs">N-grams, Recurrent Neural Networks, vanishing gradients.</span>
+                            <span class="font-medium text-gray-900 block mb-1">LM and Smoothing</span>
                         </td>
                         <td class="py-4 px-4 align-top">
-                            <span class="text-xs text-red-600 font-semibold block mb-1">Assignment 2 Out</span>
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
                         </td>
                     </tr>
                     <tr>
-                        <td class="py-4 px-4 align-top">Thu, Aug 19</td>
+                        <td class="py-4 px-4 align-top">2026-08-06</td>
                         <td class="py-4 px-4 align-top">
-                            <span class="font-medium text-gray-900 block mb-1">Transformers and Self-Attention</span>
-                            <span class="text-gray-600 text-xs">Key-Value-Query attention, Multi-head attention.</span>
+                            <span class="font-medium text-gray-900 block mb-1">LM and Smoothing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-07</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">LM and Smoothing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+
+                    <!-- Week 4 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">4</td>
+                        <td class="py-4 px-4 align-top">2026-08-12</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">POS Tagging</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-13</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">POS Tagging</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-14</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Syntax and Dependency Parsing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+
+                    <!-- Week 5 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">5</td>
+                        <td class="py-4 px-4 align-top">2026-08-19</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Syntax and Dependency Parsing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-20</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Syntax and Dependency Parsing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-21</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Syntax and Dependency Parsing</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+
+                    <!-- Week 6 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">6</td>
+                        <td class="py-4 px-4 align-top">2026-08-26</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-red-600">Holiday</span>
                         </td>
                         <td class="py-4 px-4 align-top">
                         </td>
                     </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-27</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Distributional Semantics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-08-28</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Distributional Semantics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+
+                    <!-- Week 7 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">7</td>
+                        <td class="py-4 px-4 align-top">2026-09-02</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Distributional Semantics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-09-03</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Tutorial</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-09-04</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-red-600">Holiday</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+
+                    <!-- Week 8 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="3">8</td>
+                        <td class="py-4 px-4 align-top">2026-09-09</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Logical and Distributional Semantics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-09-10</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Logical and Distributional Semantics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-09-11</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1">Logical and Distributional Semantics</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                            <a href="#" class="block mb-1 text-sm text-brand-link">[Slides]</a>
+                        </td>
+                    </tr>
+
+                    <!-- Week 9 & Midterms -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="4">9</td>
+                        <td class="py-4 px-4 align-top">2026-09-16</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-gray-400">TBD</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-09-17</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-gray-400">TBD</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-09-18</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-gray-400">TBD</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top font-bold text-red-600">Sept 21 to Oct 1</td>
+                        <td class="py-4 px-4 align-top font-bold text-red-600" colspan="2">
+                            MID TERM EXAMS
+                        </td>
+                    </tr>
+
+                    <!-- Week 10 -->
+                    <tr>
+                        <td class="py-4 px-4 align-top font-semibold text-gray-600 bg-gray-50" rowspan="2">10</td>
+                        <td class="py-4 px-4 align-top">2026-09-30</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-gray-400">TBD</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 align-top">2026-10-01</td>
+                        <td class="py-4 px-4 align-top">
+                            <span class="font-medium text-gray-900 block mb-1 text-gray-400">TBD</span>
+                        </td>
+                        <td class="py-4 px-4 align-top">
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>

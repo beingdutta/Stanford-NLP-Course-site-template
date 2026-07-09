@@ -1,0 +1,4 @@
+/* Styles specific to the navigation bar */
+.main-nav a {
+    text-decoration: none !important;
+}
