@@ -53,13 +53,34 @@
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-6 text-sm font-medium">
-                        <a href="schedule.html" class="hover:text-gray-200 px-3 py-2">Schedule</a>
+                        <a href="topics.html" class="hover:text-gray-200 px-3 py-2">Topics</a>
+                        <a href="study_notes.html" class="hover:text-gray-200 px-3 py-2">Materials</a>
                         <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2">Office Hours</a>
                         <a href="projects.html" class="hover:text-gray-200 px-3 py-2">Final projects</a>
                         <!-- <a href="#lecture-videos" class="hover:text-gray-200 px-3 py-2">Lecture Videos</a> -->
                         <a href="https://adityasomak.github.io/research/" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
                     </div>
                 </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-brand-dark inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="topics.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Topics</a>
+                <a href="study_notes.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Materials</a>
+                <a href="office-hours.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Office Hours</a>
+                <a href="projects.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Final projects</a>
+                <a href="https://adityasomak.github.io/research/" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Our Lab</a>
             </div>
         </div>
     </nav>
@@ -102,7 +123,7 @@
                     <div class="flex flex-col gap-8">
                         <!-- Instructor 1 -->
                         <div class="text-center">
-                            <img src="assets/user.jpg" alt="Somak Aditya" class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-sm">
+                            <img src="assets/somak_sir.jpg" alt="Somak Aditya" class="w-32 h-32 rounded-full mx-auto mb-3 object-cover shadow-sm">
                             <span class="block font-medium text-gray-800">Somak Aditya</span>
                             <a href="mailto:aditya.somak@gmail.com" class="text-brand-link block text-sm">aditya.somak@gmail.com</a>
                             <span class="text-sm text-gray-500 block">(Course Instructor)</span>
@@ -116,25 +137,25 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 justify-items-center">
                         <!-- TA 1 -->
                         <div class="text-center">
-                            <img src="assets/user.jpg" alt="Aritra Dutta" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <img src="assets/aritra.jpg" alt="Aritra Dutta" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
                             <span class="block text-sm font-medium text-gray-800">Aritra Dutta</span>
                             <a href="mailto:aritradutta18@gmail.com" class="text-brand-link block text-xs">aritradutta18@gmail.com</a>
                         </div>
                         <!-- TA 2 -->
                         <div class="text-center">
-                            <img src="assets/user.jpg" alt="Arghyadeep Ghosh" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <img src="assets/arghya.jpg" alt="Arghyadeep Ghosh" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
                             <span class="block text-sm font-medium text-gray-800">Arghyadeep Ghosh</span>
                             <a href="mailto:Ghosh.arghyadeep7@gmail.com" class="text-brand-link block text-xs">Ghosh.arghyadeep7@gmail.com</a>
                         </div>
                         <!-- TA 3 -->
                         <div class="text-center">
-                            <img src="assets/user.jpg" alt="Sachin Vashistha" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <img src="assets/sachin.jpg" alt="Sachin Vashistha" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
                             <span class="block text-sm font-medium text-gray-800">Sachin Vasistha</span>
                             <a href="mailto:sachinvashistha6916@gmail.com" class="text-brand-link block text-xs">sachinvashistha6916@gmail.com</a>
                         </div>
                         <!-- TA 4 -->
                         <div class="text-center">
-                            <img src="assets/user.jpg" alt="Preeta Das" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
+                            <img src="assets/preeta.png" alt="Preeta Das" class="w-28 h-28 rounded-full mx-auto mb-3 object-cover shadow-sm border-4 border-white">
                             <a href="#" class="text-brand-link block text-sm font-medium">Preeta Das</a>
                             <span class="text-xs text-gray-500 block">(Additional TA)</span>
                         </div>
@@ -148,10 +169,71 @@
     <section class="max-w-5xl mx-auto px-4 py-12">
         <h2 class="text-3xl mb-4">Announcements</h2>
         <ul class="list-disc pl-8 space-y-4 text-gray-800">
+            <li>Class started on 17th Aug, 2027 on NR411</li>
             <li>The course is aimed to have around 100 students. CS students will be preferred. Given we have to reserve seats for scholars, very little room is left for taking more students.</li>
             <li>We follow a strict attendance policy which will be recorded and added to grade weightage.</li>
             <li>See the prerequisite section to check whether you will be able to cope up with coding assignments in the course.</li>
         </ul>
+    </section>
+
+    <!-- Course Timings -->
+    <section class="bg-brand-bgalt py-12 border-t border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl mb-8">Course Timings ( NR411 Nalanda Classroom Complex )</h2>
+            <div class="grid sm:grid-cols-3 gap-6">
+                <div class="bg-white border border-gray-200 p-6 rounded-lg text-center">
+                    <h3 class="text-xl mb-2">Wednesday</h3>
+                    <p class="text-gray-600 text-lg">9:00 AM - 10:00 AM</p>
+                </div>
+                <div class="bg-white border border-gray-200 p-6 rounded-lg text-center">
+                    <h3 class="text-xl mb-2">Thursday</h3>
+                    <p class="text-gray-600 text-lg">8:00 AM - 9:00 AM</p>
+                </div>
+                <div class="bg-white border border-gray-200 p-6 rounded-lg text-center">
+                    <h3 class="text-xl mb-2">Friday</h3>
+                    <p class="text-gray-600 text-lg">11:00 AM - 12:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Weightage -->
+    <section class="max-w-5xl mx-auto px-4 py-12" id="course-weightage">
+        <h2 class="text-3xl mb-4">Course Weightage</h2>
+        <p class="text-red-600 font-bold mb-6 text-gray-800">Disclaimer: Weightage is tentative and subject to change!</p>
+        <p class="mb-8 text-gray-800">The final grade for the course will be determined by the following components:</p>
+        <div class="overflow-x-auto shadow-sm rounded-lg border border-gray-200">
+            <table class="min-w-full bg-white">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="py-3 px-6 text-left font-semibold text-gray-600">Component</th>
+                        <th class="py-3 px-6 text-left font-semibold text-gray-600">Weightage</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 text-gray-800">
+                    <tr>
+                        <td class="py-4 px-6">Midsem</td>
+                        <td class="py-4 px-6">30%</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="py-4 px-6">Final Sem</td>
+                        <td class="py-4 px-6">30%</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-6">Assignment 1</td>
+                        <td class="py-4 px-6">10%</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="py-4 px-6">Assignment 2</td>
+                        <td class="py-4 px-6">15%</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-6">Quizzes + Attendances</td>
+                        <td class="py-4 px-6">15%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <!-- Content & Previous Offerings (Alt BG) -->
@@ -198,41 +280,29 @@
             <li>Research papers and online materials to be pointed out in class, especially for the recent topics</li>
         </ul>
     </section>
-    <!-- Coursework -->
-    <section class="bg-brand-bgalt py-12 border-t border-gray-200" id="coursework">
+
+    <!-- Plagiarism policy -->
+    <section class="bg-brand-bgalt py-12 border-t border-b border-gray-200">
         <div class="max-w-5xl mx-auto px-4">
-            <h2 class="text-3xl mb-4">Coursework</h2>
-            <p class="text-red-600 font-bold mb-6 text-gray-800">Disclaimer: Coursework is tentative and subject to change!</p>
-            <p class="mb-8 text-gray-800">The final grade for the course will be determined by the following components:</p>
+            <h2 class="text-3xl mb-4">Plagiarism policy</h2>
             <ul class="list-disc pl-8 space-y-2 mb-6 text-gray-800">
-                <li><strong>Midsem:</strong> 30%</li>
-                <li><strong>Final Sem:</strong> 30%</li>
-                <li><strong>Assignment 1:</strong> 10%</li>
-                <li><strong>Assignment 2:</strong> 15%</li>
-                <li><strong>Quizzes + Attendances:</strong> 15%</li>
+                <li>
+                    Plagiarism in any form - copying from other students or from online resources - will be <strong class="text-red-600">severely penalized</strong>.
+                    Every assignment should be done <strong class="text-red-600">individually or in designated groups</strong>. Also you should <strong class="text-red-600">not use / copy any code that is available online</strong>.
+                </li>
+                <li>
+                    While you can discuss the concepts and assignments with other students/groups, you should <strong class="text-red-600">NOT share your code/answers</strong> for any assignment with any other student (or with students outside your designated group), until the grading of the assignment is completed.
+                    It is <strong class="text-red-600">your responsibility</strong> to ensure that your codes/answers are not available to others.
+                </li>
+                <li>
+                    We will use standard plagiarism detection software to check the similarity of submitted assignments.
+                    If we find submissions that are too similar (beyond what can be expected by chance, or due to discussion), all such submissions will be <strong class="text-red-600">severely penalized</strong>.
+                    We will <strong class="text-red-600">NOT attempt to differentiate</strong> between who gave the codes and who copied; all involved students will be <strong class="text-red-600">penalized equally</strong>.
+                    The <strong class="text-red-600">minimum penalty for plagiarism in an assignment is a zero on that assignment</strong>.
+                    There can be <strong class="text-red-600">more severe penalties for repeat offences, including grade reduction and de-registration from the course</strong>.
+                </li>
             </ul>
         </div>
-    </section>
-    <!-- Plagiarism policy -->
-    <section class="max-w-5xl mx-auto px-4 py-12">
-        <h2 class="text-3xl mb-4">Plagiarism policy</h2>
-        <ul class="list-disc pl-8 space-y-2 mb-6 text-gray-800">
-            <li>
-                Plagiarism in any form - copying from other students or from online resources - will be <strong class="text-red-600">severely penalized</strong>.
-                Every assignment should be done <strong class="text-red-600">individually or in designated groups</strong>. Also you should <strong class="text-red-600">not use / copy any code that is available online</strong>.
-            </li>
-            <li>
-                While you can discuss the concepts and assignments with other students/groups, you should <strong class="text-red-600">NOT share your code/answers</strong> for any assignment with any other student (or with students outside your designated group), until the grading of the assignment is completed.
-                It is <strong class="text-red-600">your responsibility</strong> to ensure that your codes/answers are not available to others.
-            </li>
-            <li>
-                We will use standard plagiarism detection software to check the similarity of submitted assignments.
-                If we find submissions that are too similar (beyond what can be expected by chance, or due to discussion), all such submissions will be <strong class="text-red-600">severely penalized</strong>.
-                We will <strong class="text-red-600">NOT attempt to differentiate</strong> between who gave the codes and who copied; all involved students will be <strong class="text-red-600">penalized equally</strong>.
-                The <strong class="text-red-600">minimum penalty for plagiarism in an assignment is a zero on that assignment</strong>.
-                There can be <strong class="text-red-600">more severe penalties for repeat offences, including grade reduction and de-registration from the course</strong>.
-            </li>
-        </ul>
     </section>
 
     <!-- Footer Space -->
@@ -240,5 +310,21 @@
         <p>&copy; 2026 IIT Kharagpur. Adapted from Stanford CS60075 template.</p>
     </footer>
 
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            
+            const icons = mobileMenuButton.querySelectorAll('svg');
+            icons[0].classList.toggle('block');
+            icons[0].classList.toggle('hidden');
+            icons[1].classList.toggle('block');
+            icons[1].classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

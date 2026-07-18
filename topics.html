@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS60075: Office Hours</title>
+    <title>CS60075: Topics</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -11,10 +11,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            red: '#8C1515',
+                            red: '#8C1515', 
                             dark: '#540b0b',
                             link: '#005587',
-                            bgalt: '#F9F9F8'
+                            bgalt: '#F9F9F8' 
                         }
                     }
                 }
@@ -29,7 +29,7 @@
 </head>
 <body class="bg-white antialiased flex flex-col min-h-screen">
 
-    <!-- Navigation Bar (Same as index.html) -->
+    <!-- Navigation Bar -->
     <nav class="bg-brand-red text-white sticky top-0 z-50 main-nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-14">
@@ -42,7 +42,6 @@
                         <a href="study_notes.html" class="hover:text-gray-200 px-3 py-2">Materials</a>
                         <a href="office-hours.html" class="hover:text-gray-200 px-3 py-2">Office Hours</a>
                         <a href="projects.html" class="hover:text-gray-200 px-3 py-2">Final projects</a>
-                        <!-- <a href="#lecture-videos" class="hover:text-gray-200 px-3 py-2">Lecture Videos</a> -->
                         <a href="https://adityasomak.github.io/research/" class="hover:text-gray-200 px-3 py-2">Our Lab</a>
                     </div>
                 </div>
@@ -71,58 +70,36 @@
     </nav>
 
     <!-- Page Content -->
-    <main class="flex-grow max-w-5xl mx-auto px-4 py-12 w-full">
-        <h2 class="text-3xl mb-6 border-b pb-2">Office Hours</h2>
-        
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-12 w-full">
+        <h2 class="text-3xl mb-6 border-b pb-2">Core Topics</h2>
+
         <p class="mb-6 text-gray-800">
-            Office hours are a great place to get help with assignments, discuss course concepts, or talk about your final project. Please check this schedule regularly as times and locations may shift slightly throughout the semester.
+            Below is a list of core topics that will be covered during the semester. The schedule is tentative and subject to change.
         </p>
 
-        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
-            <p class="text-sm text-yellow-700">
-                <strong>Note:</strong> All TA Office hours are held physically.
-            </p>
-        </div>
-
-        <h3 class="text-xl mb-4">Weekly Schedule</h3>
-        
-        <!-- Table for Office Hours -->
-        <div class="overflow-x-auto">
-            <table class="min-w-full bg-white border border-gray-200 mb-8">
-                <thead class="bg-gray-50">
-                    <tr>
-                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Day</th>
-                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Time (IST)</th>
-                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Staff</th>
-                        <th class="py-3 px-4 text-left font-bold text-gray-700 border-b">Location</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr>
-                        <td class="py-3 px-4">Monday</td>
-                        <td class="py-3 px-4">10:00 AM - 11:30 AM</td>
-                        <td class="py-3 px-4">Aritra Dutta</td>
-                        <td class="py-3 px-4">CSE Dept, Room 319</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="py-3 px-4">Tuesday</td>
-                        <td class="py-3 px-4">2:00 PM - 4:00 PM</td>
-                        <td class="py-3 px-4">Arghyadeep Ghosh</td>
-                        <td class="py-3 px-4">Takshashilla</td>
-                    </tr>
-                    <tr>
-                        <td class="py-3 px-4">Wednesday</td>
-                        <td class="py-3 px-4">5:00 PM - 6:00 PM</td>
-                        <td class="py-3 px-4">Sachin Vashistha</td>
-                        <td class="py-3 px-4">Takshashilla</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="grid md:grid-cols-2 gap-x-12 gap-y-2">
+            <ul class="list-disc pl-5 space-y-3 text-gray-800 text-lg">
+                <li>NLP Basics</li>
+                <li>Text Processing basics + Empirical laws</li>
+                <li>Language Modeling + Smoothing</li>
+                <li>Parts of Speech Tagging</li>
+                <li>Syntax, Dependency Parsing</li>
+                <li>Distributional Semantics, Word Embeddings</li>
+                <li>Combining Logical and distributional semantics</li>
+            </ul>
+            <ul class="list-disc pl-5 space-y-3 text-gray-800 text-lg">
+                <li>Introduction to Neural Networks</li>
+                <li>Seq2Seq models, RNNs, LSTMs</li>
+                <li>Introduction to attention mechanism, Transformers</li>
+                <li>Large-scale pre-training and related models (BERT, GPT)</li>
+                <li>Prompting, Debugging</li>
+                <li>Neurosymbolic NLP</li>
+            </ul>
         </div>
     </main>
 
     <!-- Footer Space -->
-    <footer class="bg-gray-800 text-white py-8 text-center text-sm w-full">
+    <footer class="bg-gray-800 text-white py-8 text-center text-sm w-full mt-auto">
         <p>&copy; 2026 IIT Kharagpur. Adapted from Stanford CS224N template.</p>
     </footer>
 
